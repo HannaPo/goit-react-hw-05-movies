@@ -25,8 +25,8 @@ const Movies = () => {
       });
   }, [searchParams]);
 
-  const onSubmit = movie => {
-    setSeachParams({ movie });
+  const onSubmit = query => {
+    setSeachParams({ query });
   };
 
   return (
