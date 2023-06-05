@@ -26,8 +26,8 @@ export const StyledLink = styled(Link)`
 
 export const StyledNavLink = styled(NavLink)`
   font-size: 18px;
-  color: #ffffff;
-`;
+  font-weight: 700;
+    `;
 
 export const Title = styled.h2`
   margin-bottom: 10px;
@@ -42,6 +42,7 @@ export const SubTitle = styled.h3`
 export const LinkList = styled.ul`
   display: flex;
   gap: 8px;
+  margin-bottom: 15px;
 `;
 
 export const Info = styled.p`
@@ -50,6 +51,5 @@ export const Info = styled.p`
   font-size: 20px;
   font-weight: 700;
   line-height: 1.5;
-  
-  text-transform: uppercase;
+    text-transform: uppercase;
 `;
