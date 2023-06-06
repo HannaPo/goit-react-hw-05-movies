@@ -12,7 +12,7 @@ const Movies = () => {
   const [searchParams, setSeachParams] = useSearchParams();
 
   useEffect(() => {
-    const movie = searchParams.get('movie') ?? '';
+    const movie = searchParams.get('query') ?? '';
     if (!movie) {
       return;
     }
