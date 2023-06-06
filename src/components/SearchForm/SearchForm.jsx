@@ -13,7 +13,7 @@ const SearchForm = ({ onSubmit }) => {
     event.preventDefault();
     if (!value) {
       alert('Type movie name');
-      return; 
+      return;
     }
     onSubmit(value);
     setValue('');
@@ -22,9 +22,14 @@ const SearchForm = ({ onSubmit }) => {
   return (
     <div onSubmit={handleSubmit}>
       <Form>
-      <Input type="text" placeholder="Type to search..." onChange={handleChange} />
-      <Button type="submit">Search</Button>
-    </Form>
+        <Input
+          type="text"
+          placeholder="Type to search..."
+          value={value}
+          onChange={handleChange}
+        />
+        <Button type="submit">Search</Button>
+      </Form>
     </div>
   );
 };
